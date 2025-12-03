@@ -1,13 +1,13 @@
 :root {
-  --bg: #050b18;
-  --card: rgba(8, 18, 36, 0.88);
-  --muted: #9cb6ff;
-  --text: #e9f0ff;
-  --outline: rgba(255, 255, 255, 0.08);
-  --accent: #66b5ff;
-  --accent-2: #7ce3ff;
-  --accent-3: #3a6dff;
-  --glow: 0 12px 55px rgba(55, 140, 255, 0.25);
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --muted: #5c6575;
+  --text: #1e2430;
+  --outline: rgba(0, 0, 0, 0.06);
+  --accent: #0f62fe;
+  --accent-2: #0f62fe;
+  --accent-3: #0b4bcc;
+  --glow: 0 16px 48px rgba(15, 98, 254, 0.12);
 }
 
 *,
@@ -19,9 +19,9 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(circle at 15% 20%, rgba(92, 168, 255, 0.14), transparent 32%),
-    radial-gradient(circle at 90% 0%, rgba(124, 227, 255, 0.12), transparent 28%),
-    radial-gradient(circle at 70% 60%, rgba(59, 109, 255, 0.1), transparent 42%),
+  background: radial-gradient(circle at 20% 25%, rgba(15, 98, 254, 0.07), transparent 32%),
+    radial-gradient(circle at 80% 0%, rgba(15, 98, 254, 0.05), transparent 30%),
+    radial-gradient(circle at 60% 65%, rgba(15, 98, 254, 0.04), transparent 38%),
     var(--bg);
   color: var(--text);
   font-family: var(--font-space-grotesk), "Space Grotesk", sans-serif;
@@ -31,6 +31,7 @@ body {
 a {
   color: var(--accent-2);
   text-decoration: none;
+  font-weight: 600;
 }
 
 a:hover {
@@ -66,7 +67,7 @@ a:hover {
   position: absolute;
   inset: 1px;
   border-radius: 14px;
-  background: linear-gradient(120deg, rgba(92, 168, 255, 0.14), transparent 32%, rgba(124, 227, 255, 0.08));
+  background: linear-gradient(120deg, rgba(15, 98, 254, 0.08), transparent 32%, rgba(15, 98, 254, 0.05));
   pointer-events: none;
   opacity: 0.5;
 }
@@ -97,7 +98,7 @@ h2 {
 
 .role {
   margin: 0 0 12px;
-  color: #cfe1ff;
+  color: #2e3b4f;
   font-weight: 600;
   font-size: 16px;
 }
@@ -118,16 +119,16 @@ h2 {
   font-size: 12px;
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(124, 227, 255, 0.35);
-  background: linear-gradient(120deg, rgba(102, 181, 255, 0.15), rgba(58, 109, 255, 0.25));
-  color: #eaf3ff;
-  box-shadow: 0 8px 24px rgba(124, 227, 255, 0.16);
+  border: 1px solid rgba(15, 98, 254, 0.25);
+  background: linear-gradient(120deg, rgba(15, 98, 254, 0.1), rgba(15, 98, 254, 0.16));
+  color: #0b1c3d;
+  box-shadow: 0 8px 24px rgba(15, 98, 254, 0.12);
 }
 
 .summary-box {
   font-size: 15px;
   line-height: 1.6;
-  color: #d7e4ff;
+  color: #2e3b4f;
 }
 
 .summary-label {
@@ -147,21 +148,21 @@ h2 {
 
 .stat-card {
   padding: 10px 12px;
-  border: 1px solid rgba(102, 181, 255, 0.25);
+  border: 1px solid rgba(15, 98, 254, 0.16);
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(58, 109, 255, 0.28), rgba(124, 227, 255, 0.18));
-  box-shadow: 0 10px 30px rgba(58, 109, 255, 0.16);
+  background: linear-gradient(135deg, rgba(15, 98, 254, 0.08), rgba(15, 98, 254, 0.04));
+  box-shadow: 0 10px 30px rgba(15, 98, 254, 0.12);
 }
 
 .stat-label {
   margin: 0;
   font-weight: 700;
-  color: #f5f8ff;
+  color: #0b1c3d;
 }
 
 .stat-detail {
   margin: 4px 0 0;
-  color: #d2e2ff;
+  color: #42526b;
   font-size: 13px;
 }
 
@@ -174,7 +175,7 @@ h2 {
   grid-template-columns: 1fr 2fr;
   gap: 8px 12px;
   font-size: 14px;
-  color: #d7e4ff;
+  color: #2e3b4f;
 }
 
 .contact-grid span {
@@ -206,21 +207,21 @@ h2 {
 }
 
 .tag {
-  background: linear-gradient(130deg, rgba(92, 168, 255, 0.32), rgba(124, 227, 255, 0.18));
-  border: 1px solid rgba(124, 227, 255, 0.35);
-  color: #eaf3ff;
+  background: #f0f4ff;
+  border: 1px solid rgba(15, 98, 254, 0.14);
+  color: #0b1c3d;
   padding: 8px 12px;
   border-radius: 999px;
   font-size: 13px;
-  box-shadow: 0 10px 32px rgba(92, 168, 255, 0.2);
+  box-shadow: 0 10px 28px rgba(15, 98, 254, 0.08);
   transition: transform 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   backdrop-filter: blur(8px);
 }
 
 .tag:hover {
   transform: translateY(-2px) rotate(-0.5deg) scale(1.01);
-  box-shadow: 0 15px 38px rgba(124, 227, 255, 0.3);
-  border-color: rgba(124, 227, 255, 0.6);
+  box-shadow: 0 15px 32px rgba(15, 98, 254, 0.12);
+  border-color: rgba(15, 98, 254, 0.24);
 }
 
 .experience-list {
@@ -239,7 +240,7 @@ h2 {
   bottom: 4px;
   width: 1px;
   background: linear-gradient(var(--accent-3), transparent);
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .experience-item {
@@ -262,8 +263,8 @@ h2 {
   width: 12px;
   height: 12px;
   border-radius: 999px;
-  background: radial-gradient(circle, #7ce3ff 30%, #3a6dff 100%);
-  box-shadow: 0 0 0 6px rgba(92, 168, 255, 0.14);
+  background: radial-gradient(circle, #0f62fe 30%, #0b4bcc 100%);
+  box-shadow: 0 0 0 6px rgba(15, 98, 254, 0.08);
   margin-top: 6px;
 }
 
@@ -277,7 +278,7 @@ h2 {
 .role-title {
   margin: 0;
   font-weight: 700;
-  color: #f2f6ff;
+  color: #0b1c3d;
 }
 
 .location {
@@ -288,7 +289,7 @@ h2 {
 
 .dates {
   margin: 0;
-  color: #c8ddff;
+  color: #3f4d63;
   font-size: 14px;
   white-space: nowrap;
 }
@@ -296,7 +297,7 @@ h2 {
 .bullets {
   margin: 8px 0 0 18px;
   padding: 0;
-  color: #dbe8ff;
+  color: #2e3b4f;
   line-height: 1.55;
 }
 
@@ -334,23 +335,23 @@ h2 {
 }
 
 .download-btn {
-  border: 1px solid rgba(124, 227, 255, 0.4);
-  background: linear-gradient(120deg, rgba(92, 168, 255, 0.3), rgba(58, 109, 255, 0.4));
-  color: #f3f7ff;
+  border: 1px solid rgba(15, 98, 254, 0.2);
+  background: linear-gradient(120deg, rgba(15, 98, 254, 0.08), rgba(15, 98, 254, 0.14));
+  color: #0b1c3d;
   padding: 10px 14px;
   border-radius: 12px;
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
-  box-shadow: 0 10px 32px rgba(92, 168, 255, 0.28);
+  box-shadow: 0 10px 28px rgba(15, 98, 254, 0.12);
   transition: transform 0.15s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   backdrop-filter: blur(6px);
 }
 
 .download-btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 14px 36px rgba(124, 227, 255, 0.32);
-  border-color: rgba(124, 227, 255, 0.65);
+  box-shadow: 0 14px 32px rgba(15, 98, 254, 0.16);
+  border-color: rgba(15, 98, 254, 0.32);
 }
 
 .download-btn:active {
@@ -362,20 +363,20 @@ h2 {
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  filter: blur(110px);
-  opacity: 0.35;
+  filter: blur(120px);
+  opacity: 0.28;
   animation: float 16s ease-in-out infinite;
 }
 
 .orb-one {
-  background: #5ca8ff;
+  background: #b7d2ff;
   top: -120px;
   left: -80px;
   animation-delay: 0.6s;
 }
 
 .orb-two {
-  background: #7ce3ff;
+  background: #d9e7ff;
   bottom: -140px;
   right: -100px;
 }
@@ -383,8 +384,8 @@ h2 {
 .gridlines {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
   background-size: 120px 120px;
   mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.9), transparent 70%);
   opacity: 0.35;
